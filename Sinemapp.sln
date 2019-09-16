@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinemapp.Service", "Sinemap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinemapp.Admin", "Sinemapp.Admin\Sinemapp.Admin.csproj", "{C93129B0-BA6F-482A-A5CC-C1FD6AD94000}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinemapp.Web", "Sinemapp.Web\Sinemapp.Web.csproj", "{A48AFF9B-B39A-4BFE-9BF8-50799ACE7C02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C93129B0-BA6F-482A-A5CC-C1FD6AD94000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C93129B0-BA6F-482A-A5CC-C1FD6AD94000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C93129B0-BA6F-482A-A5CC-C1FD6AD94000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48AFF9B-B39A-4BFE-9BF8-50799ACE7C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48AFF9B-B39A-4BFE-9BF8-50799ACE7C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48AFF9B-B39A-4BFE-9BF8-50799ACE7C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48AFF9B-B39A-4BFE-9BF8-50799ACE7C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

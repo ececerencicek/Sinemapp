@@ -26,5 +26,11 @@ namespace Sinemapp.Admin.Controllers
 
             return View();
         }
+
+        public ActionResult FilmPage()
+        {
+            ViewBag.Message = "Film sayfası";
+            return View();
+        }
     }
 }

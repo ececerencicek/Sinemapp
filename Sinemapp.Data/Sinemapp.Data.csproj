@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sinemapp.Data</RootNamespace>
     <AssemblyName>Sinemapp.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,6 +37,9 @@
     </Reference>
     <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=8.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.8.1.1\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -91,6 +95,30 @@
     <Compile Include="Migrations\201908242111031_UpdateEntity.Designer.cs">
       <DependentUpon>201908242111031_UpdateEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908251311109_RemoveGenre.cs" />
+    <Compile Include="Migrations\201908251311109_RemoveGenre.Designer.cs">
+      <DependentUpon>201908251311109_RemoveGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908301640448_NewEntity.cs" />
+    <Compile Include="Migrations\201908301640448_NewEntity.Designer.cs">
+      <DependentUpon>201908301640448_NewEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909011323339_NewEntityProperty.cs" />
+    <Compile Include="Migrations\201909011323339_NewEntityProperty.Designer.cs">
+      <DependentUpon>201909011323339_NewEntityProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909011531384_NewEntityProp.cs" />
+    <Compile Include="Migrations\201909011531384_NewEntityProp.Designer.cs">
+      <DependentUpon>201909011531384_NewEntityProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909011535443_EditAppDb.cs" />
+    <Compile Include="Migrations\201909011535443_EditAppDb.Designer.cs">
+      <DependentUpon>201909011535443_EditAppDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909070929489_NameDegis.cs" />
+    <Compile Include="Migrations\201909070929489_NameDegis.Designer.cs">
+      <DependentUpon>201909070929489_NameDegis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
@@ -112,6 +140,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908242111031_UpdateEntity.resx">
       <DependentUpon>201908242111031_UpdateEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908251311109_RemoveGenre.resx">
+      <DependentUpon>201908251311109_RemoveGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908301640448_NewEntity.resx">
+      <DependentUpon>201908301640448_NewEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909011323339_NewEntityProperty.resx">
+      <DependentUpon>201909011323339_NewEntityProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909011531384_NewEntityProp.resx">
+      <DependentUpon>201909011531384_NewEntityProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909011535443_EditAppDb.resx">
+      <DependentUpon>201909011535443_EditAppDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909070929489_NameDegis.resx">
+      <DependentUpon>201909070929489_NameDegis.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

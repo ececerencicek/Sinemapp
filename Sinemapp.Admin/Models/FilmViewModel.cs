@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sinemapp.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,16 +12,24 @@ namespace Sinemapp.Admin.Models
         public Guid Id { get; set; }
         [Display(Name = "Film Adı")]
         [Required]
-        public string FilmName { get; set; }
+        public string Name { get; set; }
+        [Display(Name = "Oyuncu Adı")]
+        public string CastFullName { get; set; }
         [Display(Name = "Puan")]
         [Required]
         public string Rating { get; set; }
+        [Display(Name = "Tür")]
+        [Required]
+        public Genre Genre { get; set; }
         [Display(Name = "Film Süresi")]
         [Required]
+        [DataType(DataType.Time)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:H:mm}")]
         public DateTime RunTime { get; set; }
         [Display(Name = "Çıkış Tarihi")]
         [Required]
         public DateTime ReleaseDate { get; set; }
+
         [Display(Name = "Yönetmen")]
         [Required]
         public string Director { get; set; }

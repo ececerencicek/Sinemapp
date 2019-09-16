@@ -21,11 +21,12 @@ namespace Sinemapp.Data
                 return new ApplicationDbContext();
             }
 
-        public virtual DbSet<Film> Cinemas { get; set; }
+        public virtual DbSet<Film> Films { get; set; }
         public virtual DbSet<Cast> Casts { get; set; }
-        public virtual DbSet<Genre> Genres { get; set; }
         public virtual DbSet<News> Newses { get; set; }
+        public virtual DbSet<TvSerie> TvSeries { get; set; }
 
-        }
+ //       public System.Data.Entity.DbSet<Sinemapp.Model.TvSerie> TvSeries { get; set; }
+    }
     
 }

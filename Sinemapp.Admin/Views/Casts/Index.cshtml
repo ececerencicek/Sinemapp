@@ -1,0 +1,70 @@
+﻿@model  IEnumerable<Sinemapp.Admin.Models.CastViewModel>
+
+@{
+    ViewBag.Title = "Oyuncular";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<body>
+    <div class="container">
+        <h2>Oyuncular</h2>
+
+        <p>
+            <a href="@Url.Action("Create")" class="btn btn-primary">Yeni Oyuncu</a>
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TvSerieName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BirthDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Gender)
+                </th>
+
+                <th class="all">Eylemler</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TvSerieName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BirthDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Gender)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-success btn-sm " })
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>

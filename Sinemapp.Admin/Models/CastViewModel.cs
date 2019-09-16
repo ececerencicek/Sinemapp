@@ -23,9 +23,17 @@ namespace Sinemapp.Admin.Models
         public DateTime? BirthDate { get; set; }
         [Display(Name = "Cinsiyet")]
         public Gender? Gender { get; set; }
+      
+        [Display(Name = "Film Adı")]
+        
+        public string FilmName { get; set; }
         [Display(Name = "Film")]
-        [Required]
+        
         public Guid? FilmId { get; set; }
-
+        [Display(Name = "Dizi Adı")]       
+        public string TvSerieName { get; set; }
+        [Display(Name = "Dizi")]
+        
+        public Guid? TvSerieId { get; set; }
     }
 }

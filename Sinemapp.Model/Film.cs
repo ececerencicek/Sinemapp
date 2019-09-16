@@ -13,6 +13,7 @@ namespace Sinemapp.Model
         public string Rating { get; set; }
         public DateTime RunTime { get; set; }
         public DateTime ReleaseDate { get; set; }
+        public Genre Genre { get; set; }
         public string Director { get; set; }
         public string Writer { get; set; }
         public string Country { get; set; }
@@ -20,8 +21,6 @@ namespace Sinemapp.Model
         public string Photo { get; set; }
         public string NumOfViewer { get; set; }
         public string Revenue { get; set; }
-
-        public ICollection<Genre> Genres { get; set; }
-        public ICollection<Cast> Casts { get; set; }
+        public virtual ICollection<Cast> Casts { get; set; }
     }
 }

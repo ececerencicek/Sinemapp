@@ -27,8 +27,8 @@ namespace Sinemapp.Admin
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>();
             builder.RegisterType<CastService>().As<ICastService>();
             builder.RegisterType<FilmService>().As<IFilmService>();
-            builder.RegisterType<GenreService>().As<IGenreService>();
             builder.RegisterType<NewsService>().As<INewsService>();
+            builder.RegisterType<TvSerieService>().As<ITvSerieService>();
 
             IContainer container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
